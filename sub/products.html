@@ -188,9 +188,15 @@ h1 {
                 </div>
 
                 <div class="download-mini">
-                    <a class="btn download-btn" href="/downloads/nvr.zip">
+                    <!-- 
+                    <a class="btn download-btn" href="/downloads/nvr.zip"> 
                         Download NVR
                     </a>
+                    -->
+
+                    <a class="btn download-btn" href="#" onclick="showPreparing(); return false;">
+                        Download NVR
+                    </a>                    
                 </div>
 
             </div>
@@ -286,4 +292,10 @@ function sendHeight() {
 
 window.onload = sendHeight;
 window.onresize = sendHeight;
+</script>
+
+<script>
+function showPreparing() {
+    alert("NVR 다운로드는 현재 준비중입니다.\n조금만 기다려 주세요.");
+}
 </script>
